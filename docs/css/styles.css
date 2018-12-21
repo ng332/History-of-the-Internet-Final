@@ -1,0 +1,249 @@
+@import "animation.css";
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 90px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+
+#navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+#navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#navbar-right {
+    float: right;
+}
+
+@media screen and (max-width: 580px) {
+    #navbar {
+        padding: 20px 10px !important;
+    }
+    #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #navbar-right {
+        float: none;
+    }
+}
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+        float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.block:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.block a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+#footer {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.flexWrapper {
+    display: flex;
+    margin-top: 210px;
+}
+
+.paddingBox {
+    padding-bottom: 20px;
+}
+
+/******Timeline CSS********/
+.main-timeline11{overflow:hidden;position:relative}
+.main-timeline11:before{content:"";width:7px;height:100%;background:#909090;position:absolute;top:0;left:50%;transform:translateX(-50%)}
+.main-timeline11 .timeline{width:50%;padding-left:50px;float:right;position:relative}
+.main-timeline11 .timeline:after,.main-timeline11 .timeline:before{position:absolute;content:"";top:50%;transform:translateY(-50%)}
+.main-timeline11 .timeline:before{width:30px;height:30px;border-radius:50%;background:#909090;border:7px solid #fff;left:-15px}
+.main-timeline11 .timeline:after{display:block;border-right:30px solid #ee4423;border-top:20px solid transparent;border-bottom:20px solid transparent;left:24px}
+.main-timeline11 .timeline-content{display:block;padding:25px;border-radius:100px;background:#ee4423;position:relative}
+.main-timeline11 .timeline-content:after,.main-timeline11 .timeline-content:before{content:"";display:block;width:100%;clear:both}
+.main-timeline11 .timeline-content:hover{text-decoration:none}
+.main-timeline11 .inner-content{width:70%;float:right;padding:15px 20px 15px 15px;background:#fff;border-radius:0 100px 100px 0;color:#ee4423}
+.main-timeline11 .year{display:inline-block;font-size:50px;font-weight:600;color:#fff;position:absolute;top:50%;left:7%;transform:translateY(-50%)}
+.main-timeline11 .title{font-size:24px;font-weight:600;text-transform:uppercase;margin:0 0 5px}
+.main-timeline11 .description{font-size:14px;margin:0 0 5px}
+.main-timeline11 .timeline:nth-child(2n){padding:0 50px 0 0}
+.main-timeline11 .timeline:nth-child(2n) .year,.main-timeline11 .timeline:nth-child(2n):before{left:auto;right:-15px}
+.main-timeline11 .timeline:nth-child(2n) .year{right:7%}
+.main-timeline11 .timeline:nth-child(2n):after{border-right:none;border-left:30px solid #ee4423;left:auto;right:24px;border-left-color:#f68829}
+.main-timeline11 .timeline:nth-child(2n) .inner-content{float:none;border-radius:100px 0 0 100px;text-align:right}
+.main-timeline11 .timeline:nth-child(2){margin-top:130px}
+.main-timeline11 .timeline:nth-child(odd){margin:-130px 0 0}
+.main-timeline11 .timeline:nth-child(even){margin-bottom:80px}
+.main-timeline11 .timeline:first-child,.main-timeline11 .timeline:last-child:nth-child(even){margin:0}
+.main-timeline11 .timeline:nth-child(2n) .timeline-content{background:#f68829}
+.main-timeline11 .timeline:nth-child(2n),.main-timeline11 .timeline:nth-child(2n) .inner-content{color:#f68829}
+.main-timeline11 .timeline:nth-child(3n) .timeline-content{background:#2991d0}
+.main-timeline11 .timeline:nth-child(3n),.main-timeline11 .timeline:nth-child(3n) .inner-content{color:#2991d0}
+.main-timeline11 .timeline:nth-child(3n):after{border-right-color:#2991d0}
+.main-timeline11 .timeline:nth-child(4n) .timeline-content{background:#9361aa}
+.main-timeline11 .timeline:nth-child(4n),.main-timeline11 .timeline:nth-child(4n) .inner-content{color:#9361aa}
+.main-timeline11 .timeline:nth-child(4n):after{border-left-color:#9361aa}
+.main-timeline11 .timeline:nth-child(5n) .timeline-content{background:#a7be26}
+.main-timeline11 .timeline:nth-child(5n),.main-timeline11 .timeline:nth-child(5n) .inner-content{color:#a7be26}
+.main-timeline11 .timeline:nth-child(5n):after{border-right-color:#a7be26}
+@media only screen and (max-width:1200px){.main-timeline11 .inner-content{width:80%}
+    .main-timeline11 .year{font-size:45px;left:10px;transform:translateY(-50%) rotate(-90deg)}
+    .main-timeline11 .timeline:nth-child(2n) .year{right:10px}
+}
+@media only screen and (max-width:990px){.main-timeline11 .year{font-size:40px;left:0}
+    .main-timeline11 .timeline:nth-child(2n) .year{right:0}
+}
+@media only screen and (max-width:767px){.main-timeline11 .timeline:before,.main-timeline11:before{left:10px;transform:translateX(0)}
+    .main-timeline11 .timeline:nth-child(2n):after{border-left:none;border-right:30px solid #ee4423;right:auto;left:24px;border-right-color:#f68829}
+    .main-timeline11 .timeline,.main-timeline11 .timeline:nth-child(even),.main-timeline11 .timeline:nth-child(odd){width:100%;float:none;margin:0 0 30px}
+    .main-timeline11 .timeline:last-child{margin-bottom:0}
+    .main-timeline11 .timeline:nth-child(2n){padding:0 0 0 50px}
+    .main-timeline11 .timeline:before,.main-timeline11 .timeline:nth-child(2n):before{left:-2px}
+    .main-timeline11 .inner-content{width:85%}
+    .main-timeline11 .timeline:nth-child(2n) .inner-content{float:right;border-radius:0 100px 100px 0;text-align:left}
+    .main-timeline11 .timeline:nth-child(2n) .year{right:auto;left:0}
+    .main-timeline11 .timeline:nth-child(3n):after{border-left-color:#2991d0}
+    .main-timeline11 .timeline:nth-child(4n):after{border-right-color:#9361aa}
+    .main-timeline11 .timeline:nth-child(5n):after{border-left-color:#a7be26}
+}
+@media only screen and (max-width:479px){.main-timeline11 .timeline-content{padding:15px}
+    .main-timeline11 .inner-content{width:80%}
+    .main-timeline11 .year{font-size:30px}
+}
+
+.paddingTop {
+    padding-top: 25px;
+}
